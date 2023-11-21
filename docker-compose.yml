@@ -12,3 +12,4 @@ services:
       - 8880:8888
     volumes:
       - /repositories/tensorflow_tutorials:/tf/notebooks
+      - /repositories/models:/models
