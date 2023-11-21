@@ -1,0 +1,14 @@
+services:
+  jupyter-8888:
+    image: "tensorflow/tensorflow:nightly-gpu-jupyter"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: "nvidia"
+              device_ids: ["0"]
+              capabilities: [gpu]
+    ports:
+      - 8880:8888
+    volumes:
+      - /repositories/tensorflow_tutorials:/tf/notebooks
