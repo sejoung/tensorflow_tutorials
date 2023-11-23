@@ -1,6 +1,6 @@
 services:
   jupyter-8888:
-    image: "tensorflow/tensorflow:nightly-gpu-jupyter"
+    image: "tensorflow/tensorflow:2.15.0-gpu-jupyter"
     deploy:
       resources:
         reservations:
