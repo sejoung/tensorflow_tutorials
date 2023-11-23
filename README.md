@@ -7,7 +7,7 @@
 ```shell
 docker build -t tensorflow_tutorials .
 
-docker run -it --rm -p 8888:8888 tensorflow_tutorials
+docker run --gpus all -d --rm -p 8888:8888 tensorflow_tutorials
 ```
 
 ```shell
