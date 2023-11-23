@@ -5,6 +5,12 @@
 ## 사용법
 
 ```shell
+docker build -t tensorflow_tutorials .
+
+docker run -it --rm -p 8888:8888 tensorflow_tutorials
+```
+
+```shell
 docker-compose up -d
 
 docker-compose restart
